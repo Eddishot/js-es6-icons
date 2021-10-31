@@ -148,6 +148,41 @@ function typeOfIcon(arrayIcons){
 
 
 typeOfIcon(icone)
+console.log(typeOfIcon(icone))
+
+
+
+const boxIcon = icone.map((arrayIcon) =>{
+
+	const { name, family, prefix, type} = arrayIcon
+
+
+	const color =  colorType [type]
+
+
+	containerCard.innerHTML += `
+
+		 <div class="my-icon ${type}>
+				<i class="${family} ${prefix + name}</i>
+				<h3> ${name}</h3>
+		 </div>
+
+	
+	`
+
+	return {
+
+		numeroIndice : arrayIcon 
+	}
+
+
+
+}) 
+
+
+select.addEventListener("change", function (){
+
+})
 
 
 
