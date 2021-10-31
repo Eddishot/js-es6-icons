@@ -98,3 +98,56 @@ const icone = [
 		family: 'fas'
 	}
 ];
+
+
+// collego il DOM
+
+const select = document.getElementById("select");
+
+const containerCard = document.querySelector(".container-card");
+
+
+// creo un'oggetto per sostituire i colori in base al type
+
+const colorType = {
+	"animal " : "red",
+	"vegetable" : "green",
+	"user": "blue"
+}
+console.log(colorType)
+
+ 
+
+function typeOfIcon(arrayIcons){
+	
+	const typeOfIcon = {}
+
+	for (let i = 0; i < icone.length; i++) {
+		const {type,name} = icone [i];
+
+		if(! typeOfIcon [type]){
+
+			typeOfIcon [type] = []
+		}
+
+		typeOfIcon [type].push({
+			"name":"name",
+			"type":"type",
+
+			color(){
+				return colorType [type]
+			}
+		})
+		
+	}
+
+	return typeOfIcon 
+	console.log(typeOfIcon)
+
+}
+
+
+typeOfIcon(icone)
+
+
+
