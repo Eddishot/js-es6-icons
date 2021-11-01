@@ -160,15 +160,15 @@ const boxIcon = icone.map((arrayIcon) =>{
 	const color =  colorType [type]
 
 
-	containerCard.innerHTML += `
-
-		 <div class="my-icon ${type}>
-				<i class="${family} ${prefix + name}</i>
-				<h3> ${name}</h3>
-		 </div>
-
+	containerCard.innerHTML += `<div class=" my-icon-container">
+		 							<div class="my-icon ${type}>
+										<i class="${family} ${prefix + name}</i>
+										<h3> ${name}</h3>
+		 							</div>
+								</div>`
+		
 	
-	`
+	
 
 	return {
 
@@ -180,9 +180,9 @@ const boxIcon = icone.map((arrayIcon) =>{
 }) 
 
 
-select.addEventListener("change", function (){
+// select.addEventListener("change", function (){
 
-})
+// })
 
 
 

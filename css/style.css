@@ -3,7 +3,18 @@
 
 .my-icon{
 
-    text-align: center;
-    border-radius: 10px;
-    padding: 10px;
+    /* text-align: center; */
+    /* border-radius: 10px;
+    padding: 10px;*/
+    font-size: 20px;
+
+} 
+
+.my-icon-container{
+    width: 130px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color:lightblue;
 }
